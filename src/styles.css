@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: 0;
+    padding-left: 0;
+}
