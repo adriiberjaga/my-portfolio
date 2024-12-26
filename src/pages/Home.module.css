@@ -103,7 +103,6 @@
       display: flex;
       flex-direction: column;
       transition: 1100ms;
-      padding-top: 40px;
 
     }
     .left-cont {

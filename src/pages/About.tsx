@@ -1,6 +1,6 @@
 import stylesA from "./About.module.css";
 import fotoAdri from "../assets/fotoAdri.png";
-
+import AOS from 'aos';
 function About() {
   return (
     <>
@@ -16,7 +16,7 @@ function About() {
             buscando oportunidades para crecer profesionalmente.
           </p>
           <div className={stylesA["aboutContentBoxes"]}>
-            <div className={`${stylesA.box} ${stylesA.aboutInfoLangs}`}>
+            <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoLangs}`}>
               <h4 className={stylesA["aboutContentBoxesTitle"]}>
                 Mis habilidades
               </h4>
@@ -29,7 +29,7 @@ function About() {
                 <li>TypeScript</li>
               </ul>
             </div>
-            <div className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
+            <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
               <h4 className={stylesA["aboutContentBoxesTitle"]}>
                 Estudios
               </h4>
@@ -37,7 +37,7 @@ function About() {
                 <li>Curso fronend 380h</li>
               </ul>
             </div>
-            <div className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
+            <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
               <h4 className={stylesA["aboutContentBoxesTitle"]}>
                 Experiencia
               </h4>

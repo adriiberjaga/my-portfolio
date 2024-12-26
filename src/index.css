@@ -55,6 +55,7 @@ section{
     background-color: var(--background-color);
     width: 100%;
     color: var(--primary-text-color);
+    min-height: 100vh !important;
 }
 
 @media (max-width: 1000px){
@@ -62,7 +63,6 @@ section{
   #skills,
   #proyects,
   #contact{
-    padding-top: 200px;
   }
 }
 #home{
@@ -71,6 +71,10 @@ section{
 }
 #proyects{
   height: max-content;
-  padding-bottom: 300px;
+  padding-bottom: 70px;
 }
 
+#skills,
+#contact{
+  padding-bottom: 300px;
+}
