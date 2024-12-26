@@ -1,0 +1,13 @@
+#root, #app, main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main section {
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    #proyects{
+        height: 100%;
+      }
+  }

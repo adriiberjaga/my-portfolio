@@ -1,0 +1,159 @@
+.title{
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5rem;
+    background: linear-gradient(90deg, #a300ff, #ff00dd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 20px rgba(163, 0, 255, 0.2);
+}
+.title2{
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5rem;
+    background: linear-gradient(90deg, #a300ff, #ff00dd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 20px rgba(163, 0, 255, 0.2);
+}
+
+.about{
+    display: flex;
+    align-items: space-between;
+    height: max-content;
+}
+.about-info{
+    max-width: 70%;
+    line-height: 1.6;
+    padding-left: 300px;
+}
+.about-text{
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+.aboutContentBoxes{
+    display: flex;
+    gap: 30px;
+}
+.box{
+    padding: 2rem;
+    border: 2px solid #a300ff ;
+    box-shadow: 0 1.4rem #a300ff ;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+    height: auto;
+
+}
+.aboutContentBoxesTitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #a300ff ;
+    text-align: center;
+}
+.aboutImage{
+    margin-left: 100px;
+}
+.aboutImage img{
+    max-width: 100%;
+    border-radius: 4rem;
+    box-shadow: 0 1.4rem #a300ff ;
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 1440px) {
+    .title{
+      font-size: 4rem;
+      padding-left: 220px;
+    }
+    .about-info{
+    padding: 0 10rem 0 5rem;
+    }
+    .aboutImage{
+        margin-left: 0px;
+    }
+  }
+  
+  @media (max-width: 1250px) {
+
+    .title{
+      font-size: 3.8rem;
+    }
+    .about-info{
+        padding: 0 6rem 0 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .title2{
+        display: none;}
+  }
+  @media (max-width: 1024px) {
+    .title{
+        display: none;
+    }
+    .title2{
+        margin-bottom: 1rem;
+    }
+    .aboutImage img{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+      padding-left:0 ;
+      justify-content: center;
+      font-size: 3.8rem;
+      order: 1;
+    }
+    .about-info{
+        padding: 0 1rem 0 1rem;
+        order: 2;
+        text-align: center;
+    }
+  }
+  
+  @media (max-width: 864px) {
+    .aboutContentBoxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutImage img{
+      width: 270px;
+      margin-bottom: 60px;
+  }
+  }
+  @media (max-width: 768px) {
+
+    .title{
+      font-size: 3.4rem;
+    }
+  }
+  
+  /* Estilo para pantallas ultra pequeñas (móviles) */
+  @media (max-width: 480px) {
+
+    .title2{
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+    .aboutImage img{
+      width: 230px;
+      margin-bottom: 60px;
+  }
+    .about-info{
+        max-width: 1000px;
+        line-height: 1.6;
+    }
+  }

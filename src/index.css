@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #f6f6f6;
+  --primary-text-color: #0a0a0a;
+  --header-color: rgba(133, 133, 133, 0.2);
+
+}
+
+[data-theme="dark"] {
+  --background-color: #0a0a0a;
+  --primary-text-color: #f6f6f6;
+  --header-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Ancho o alto de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 15px; /* Ancho de la barra vertical */
+    height: 10px; /* Alto de la barra horizontal */
+  }
+  
+  /* Fondo de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Color y diseño de la barra */
+  ::-webkit-scrollbar-thumb {
+    background: #a300ff;
+  }
+  
+  /* Color de la barra al pasar el mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ad1fff;
+  }
+  
+html {
+    scroll-behavior: smooth;
+  }
+body,
+main{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    background-color: var(--background-color);
+    width: 100%;
+    color: var(--primary-text-color);
+}
+
+@media (max-width: 1000px){
+  #about,
+  #skills,
+  #proyects,
+  #contact{
+    padding-top: 200px;
+  }
+}
+#home{
+  padding-top: 100px;
+  height: 1000px;
+}
+#proyects{
+  height: max-content;
+  padding-bottom: 300px;
+}
+
