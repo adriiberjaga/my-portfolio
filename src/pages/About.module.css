@@ -48,6 +48,8 @@
     border-radius: 4rem;
     margin-bottom: 2rem;
     height: auto;
+    width: 200px;
+    flex-wrap: wrap;
 
 }
 .aboutContentBoxesTitle{

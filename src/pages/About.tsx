@@ -16,25 +16,12 @@ function About() {
             buscando oportunidades para crecer profesionalmente.
           </p>
           <div className={stylesA["aboutContentBoxes"]}>
-            <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoLangs}`}>
-              <h4 className={stylesA["aboutContentBoxesTitle"]}>
-                Mis habilidades
-              </h4>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>TypeScript</li>
-              </ul>
-            </div>
             <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
               <h4 className={stylesA["aboutContentBoxesTitle"]}>
                 Estudios
               </h4>
               <ul>
-                <li>Curso fronend 380h</li>
+                <li>Curso frontend 380h</li>
               </ul>
             </div>
             <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
@@ -42,7 +29,7 @@ function About() {
                 Experiencia
               </h4>
               <ul>
-                <li>Curso fronend 380h</li>
+                <li>Proyectos lo</li>
               </ul>
             </div>
           </div>

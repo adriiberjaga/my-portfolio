@@ -8,6 +8,7 @@ import fotoHtml from '../assets/html-icon.png';
 import fotoReact from '../assets/react-icon.png';
 import fotoTs from '../assets/ts-icon.png';
 import todolist from '../assets/todolist.png';
+import ecomerce from '../assets/ecomerce.png';
 
 // Mover la interfaz fuera del componente
 interface Project {
@@ -32,7 +33,7 @@ const projects: Project[] = [
     ref: "https://to-do-list-react-kappa-roan.vercel.app/"
   },
   {
-    image: "https://via.placeholder.com/300x200",
+    image: ecomerce,
     title: "Proyecto 2",
     languages: [
       { name: "Python", icon: "https://cdn.jsdelivr.net/npm/@iconscout/unicons/svg/python.svg" },
@@ -48,7 +49,7 @@ function Proyects() {
   useEffect(() => {
     AOS.init({
       duration: 1200,
-      once: true,
+      once: false,
     });
   }, []);
 
