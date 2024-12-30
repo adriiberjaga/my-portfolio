@@ -27,6 +27,12 @@
 .icons{
     width: 100px;
     height: 100px;
+    transition: all 0.3s ease;
+}
+.icons:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 .iconContainer {
     display: flex;
@@ -60,3 +66,51 @@
         margin-top: 50px;
     }
 }
+
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background: rgb(0, 0, 0);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalContentImg{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  }
+  .modalContent h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .modalContent button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .closebtn{
+    width: 30px;
+  }
+  

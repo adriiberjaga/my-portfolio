@@ -44,36 +44,10 @@
   position: relative;
   overflow: hidden;
 }
-
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 2rem;
-  padding: 2px;
-  background: linear-gradient(135deg, #a300ff, #ff00dd);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
 .project-card:hover {
   box-shadow: 0 10px 30px rgba(163, 0, 255, 0.2);
 }
 
-.project-card:hover::before {
-  opacity: 1;
-}
 .project-card__img{
   width: 100%;
   height: auto;
@@ -106,6 +80,14 @@
   width: 30px;
   height: 30px;
 }
+.project-card__desc{
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.project-card__ver{
+  display: flex;
+}
 .project-card__btn {
   z-index: 5;
   padding: 10px 20px;
@@ -122,10 +104,80 @@
 
 .project-card__btn:hover {
   background: linear-gradient(135deg, #8400cc, #cc00b1);
-  transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(163, 0, 255, 0.3);
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0);
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(163, 0, 255, 0.3);
+  border-radius: 2rem;
+  padding: 1.3rem;
+  width: 100%;
+  max-width: 1000px;
+  height: 800px;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+}
+.modal-title{
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.modal-img{
+  width: 80%;
+  height: auto;
+  margin: 10px
+  0;
+ 
+}
+.modal-img__content{
+  border-radius: 8px;
+  object-fit: cover;
+}	
+.languages{
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 19px;
+}
+.description{
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  margin-top: 10px;
+  margin-bottom: 19px;
+}
+.modal-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+.closebtn {
+  width: 45px;
+  padding: 10px;
+  cursor: pointer;
 
+}
 /* Estilo responsive para pantallas más pequeñas */
 @media (max-width: 1440px) {
   .project-card {
@@ -147,6 +199,13 @@
   .projects {
     padding: 0 6rem 0 3rem;
   }
+  .modal-title{
+    font-size: 2.8rem;
+  }
+  .modal-content{
+    margin: 0 50px;
+    height: 90%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -164,6 +223,20 @@
     justify-content: center;
     font-size: 3.8rem;
   }
+  .modal-title{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+
+  .modal-img{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .modal-img__content{
+   object-fit: contain;
+  }
 }
 
 @media (max-width: 768px) {
@@ -174,6 +247,9 @@
   }
   .title{
     font-size: 3.4rem;
+  }
+  .modal-title{
+    font-size: 2.2rem;
   }
 }
 
@@ -188,5 +264,8 @@
   .title{
     font-size: 2.5rem;
     margin-bottom: 4rem;
+  }
+  .modal-title{
+    font-size: 2rem;
   }
 }
