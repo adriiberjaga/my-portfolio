@@ -72,6 +72,7 @@ function Skills() {
     <>
 
     <div className={styles.main}>
+      <h3 className={styles.title}>Skills</h3>
       <div className={styles.firstCont}>
         <div data-aos={getAnimation(0)} className={styles.iconContainer}>
           <img

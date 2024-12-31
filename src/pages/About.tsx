@@ -34,7 +34,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className={stylesA["aboutImage"]}>
+        <div data-aos="zoom-in" className={stylesA["aboutImage"]}>
           <img src={fotoAdri} alt="asdas" />
         </div>
       </div>

@@ -27,6 +27,7 @@
     display: flex;
     align-items: space-between;
     height: max-content;
+    padding-bottom: 200px;
 }
 .about-info{
     max-width: 70%;

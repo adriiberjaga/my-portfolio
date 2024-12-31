@@ -1,116 +1,157 @@
-.main{
-    padding-top:200px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
+.main {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
-.firstCont{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: 50px;
-    gap: 250px;
-}	
-.secondCont{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: 150px;
-    gap: 250px;
-
-}	
-.icons{
-    width: 100px;
-    height: 100px;
-    transition: all 0.3s ease;
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 5rem;
+  background: linear-gradient(90deg, #a300ff, #ff00dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 20px rgba(163, 0, 255, 0.2);
 }
-.icons:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
+.firstCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  gap: 250px;
+}
+.secondCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+  gap: 250px;
+}
+.icons {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+.icons:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 .iconContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .iconText {
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
 }
-@media (max-width: 1024px){
-    .firstCont{
-        gap: 50px;
-    }
-    .secondCont{
-        gap: 50px;
-    }
+@media (max-width: 1024px) {
+  .firstCont {
+    gap: 50px;
+  }
+  .secondCont {
+    gap: 50px;
+  }
 }
-@media (max-width: 768px){
-    .firstCont{
-        display: grid;
-        gap: 50px;
-    }
-    .secondCont{
-        display: grid;
-        gap: 50px;
-        margin-top: 50px;
-    }
+@media (max-width: 768px) {
+  .firstCont {
+    display: grid;
+    gap: 50px;
+  }
+  .secondCont {
+    display: grid;
+    gap: 50px;
+    margin-top: 50px;
+  }
 }
 
 /* Modal Overlay */
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+  background: rgb(0, 0, 0);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalContentImg {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+.modalContent h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.modalContent button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+  font-size: 10px;
+  cursor: pointer;
+}
+.closebtn {
+  width: 30px;
+}
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 1440px) {
+  .title {
+    font-size: 4rem;
   }
-  
-  /* Modal Content */
-  .modalContent {
-    background: rgb(0, 0, 0);
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .title {
+    font-size: 3.8rem;
   }
-  .modalContentImg{
-    text-align: center;
-    width: 100px;
-    height: 100px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3.8rem;
   }
-  .modalContent h2 {
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3.4rem;
   }
-  
-  .modalContent button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 1rem;
-    font-size: 10px;
-    cursor: pointer;
+}
+
+/* Estilo para pantallas ultra pequeñas (móviles) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 3rem;
   }
-  .closebtn{
-    width: 30px;
-  }
-  
+}
