@@ -75,7 +75,7 @@ function Contact() {
           <form onSubmit={onSubmit} className={stylesA["contactForm"]}>
             <label htmlFor="name" className={stylesA["contactLabel"]}></label>
             <input
-              data-aos="fade-right"
+              data-aos="zoom-in"
               required
               type="text"
               name="name"
@@ -87,7 +87,7 @@ function Contact() {
               className={stylesA["contactInput"]}
             />
             <input
-              data-aos="fade-left"
+              data-aos="zoom-in"
               required
               type="email"
               name="email"
@@ -98,7 +98,7 @@ function Contact() {
               className={stylesA["contactInput"]}
             />
             <textarea
-              data-aos="fade-right"
+              data-aos="zoom-in"
               required
               maxLength={500}
               name="message"

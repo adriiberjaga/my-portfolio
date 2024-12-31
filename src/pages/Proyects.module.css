@@ -193,7 +193,7 @@
 @media (max-width: 1250px) {
   .project-card {
     width: 420px; /* Reduce el ancho */
-    height: 450px; /* Ajusta la altura */
+    height: auto; /* Ajusta la altura */
     margin: 1rem auto;
   }
   .projects {
@@ -211,7 +211,7 @@
 @media (max-width: 1024px) {
   .project-card {
     width: 420px; /* Reduce el ancho */
-    height: 440px; /* Ajusta la altura */
+    height: auto; /* Ajusta la altura */
     margin: 3rem auto;
   }
   .projects {
@@ -242,7 +242,7 @@
 @media (max-width: 768px) {
   .project-card {
     width: 360px; /* Reduce el ancho */
-    height: 400px; /* Ajusta la altura */
+    height: auto; /* Ajusta la altura */
     margin: 1rem auto;
   }
   .title{
@@ -257,7 +257,7 @@
 @media (max-width: 480px) {
   .project-card {
     width: 320px; /* Reduce aún más el ancho */
-    height: 380px; /* Ajusta la altura */
+    height:auto; /* Ajusta la altura */
     padding: 1rem;
     border-radius: 1rem; /* Reduce el radio de los bordes */
   }
