@@ -13,7 +13,8 @@ import fotoTs from "../assets/ts-icon.png";
 import todolist from "../assets/todolist.png";
 import ecomerce from "../assets/ecomerce.png";
 import close from "../assets/close-icon.png";
-
+import ecomerce2 from "../assets/hym.png"
+import acuario from '../assets/acuario.png'
 // Mover la interfaz fuera del componente
 interface Project {
   image: string;
@@ -27,28 +28,43 @@ interface Project {
 const projects: Project[] = [
   {
     image: todolist,
-    title: "Proyecto 1",
+    title: "Todo list",
     languages: [
       { name: "React", icon: fotoReact },
       { name: "TypeScript", icon: fotoTs },
-      { name: "Node.js", icon: "https://via.placeholder.com/30" },
     ],
-    desc: "Descripción del Proyecto 1",
+desc: "Aplicación interactiva para gestionar tareas, que permite agregar, completar y eliminar elementos con una interfaz intuitiva. Incluye almacenamiento local para preservar las tareas al recargar la página.",
     ref: "https://to-do-list-react-kappa-roan.vercel.app/",
   },
   {
     image: ecomerce,
-    title: "Proyecto 2",
+    title: "Ecommerce",
     languages: [
-      {
-        name: "Python",
-        icon: "https://cdn.jsdelivr.net/npm/@iconscout/unicons/svg/python.svg",
-      },
-      { name: "Django", icon: "https://via.placeholder.com/30" },
-      { name: "PostgreSQL", icon: "https://via.placeholder.com/30" },
+      { name: "React", icon: fotoReact },
+      { name: "TypeScript", icon: fotoTs },
     ],
-    desc: "Descripción del Proyecto 2",
-    ref: "https://www.google.com",
+    desc: "Plataforma de ecommerce ficticia donde los usuarios pueden explorar productos, agregar artículos al carrito y gestionar el contenido del mismo con una experiencia fluida y dinámica.",
+    ref: "https://react-ecommerce-kappa-navy.vercel.app/",
+  },
+  {
+    image: ecomerce2,
+    title: "Ecommerce ",
+    languages: [
+      { name: "React", icon: fotoReact },
+      { name: "TypeScript", icon: fotoTs },
+    ],
+    desc: "Versión mejorada de un ecommerce, con patrones de diseño optimizados y funcionalidades avanzadas, proporcionando una experiencia de usuario refinada y mejor manejo del estado global. (Pendiente de terminar la funcionabilidad del carrito y las secciones 'KIDS' y 'BEAUTY')",
+    ref: "https://ecommerce-hym.vercel.app/",
+  },
+  {
+    image: acuario,
+    title: "Web acuario",
+    languages: [
+      { name: "React", icon: fotoReact },
+      { name: "TypeScript", icon: fotoTs },
+    ],
+    desc: "Un sitio web dinámico y visualmente atractivo diseñado para amantes de los acuarios, donde los usuarios pueden explorar una amplia variedad de especies de peces, plantas acuáticas y equipos de mantenimiento.(Página en proceso)",
+    ref: "https://web-acuario.vercel.app/",
   },
 ];
 
@@ -91,6 +107,8 @@ function Proyects() {
                 className={styles["project-card__img"]}
                 src={project.image}
                 alt={project.title}
+                title="Ver más"
+                onClick={() => setOpenCard(project.title)}
               />
               <h3 className={styles["project-card__title"]}>{project.title}</h3>
               <div className={styles["languages"]}>
@@ -101,10 +119,12 @@ function Proyects() {
                     alt={language.name}
                     title={language.name}
                     className={styles["language-icon"]}
+                    
                   />
                 ))}
               </div>
-              <p className={styles["project-card__desc"]}>{project.desc}</p>
+              <p className={styles["project-card__desc"]}>  {project.desc.length > 20 ? `${project.desc.slice(0, 70)}...` : project.desc}
+              </p>
               <button
                 onClick={() => setOpenCard(project.title)}
                 className={styles["project-card__ver"]}

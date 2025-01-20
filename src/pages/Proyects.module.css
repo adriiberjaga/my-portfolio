@@ -53,7 +53,7 @@
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-
+  cursor: pointer;
 }
 .project-card img {
   max-width: 100%;
