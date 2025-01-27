@@ -15,6 +15,7 @@ import ecomerce from "../assets/ecomerce.png";
 import close from "../assets/close-icon.png";
 import ecomerce2 from "../assets/hym.png"
 import acuario from '../assets/acuario.png'
+import ticTac from '../assets/tic-tac-toe.png'
 // Mover la interfaz fuera del componente
 interface Project {
   image: string;
@@ -57,7 +58,7 @@ desc: "Aplicación interactiva para gestionar tareas, que permite agregar, compl
     ref: "https://ecommerce-hym.vercel.app/",
   },
   {
-    image: acuario,
+    image:  acuario,
     title: "Web acuario",
     languages: [
       { name: "React", icon: fotoReact },
@@ -65,6 +66,16 @@ desc: "Aplicación interactiva para gestionar tareas, que permite agregar, compl
     ],
     desc: "Un sitio web dinámico y visualmente atractivo diseñado para amantes de los acuarios, donde los usuarios pueden explorar una amplia variedad de especies de peces, plantas acuáticas y equipos de mantenimiento.(Página en proceso)",
     ref: "https://web-acuario.vercel.app/",
+  },
+  {
+    image: ticTac,
+    title: "Tic tac toe",
+    languages: [
+      { name: "React", icon: fotoReact },
+      { name: "TypeScript", icon: fotoTs },
+    ],
+    desc: "Sitio web para jugar 3 en ralla para 2 personas, con un diseño minimalista y una interfaz intuitiva. Incluye un contador de victorias y empates para llevar un registro de los resultados.(Página en proceso)",
+    ref: "https://tic-tac-toe-ten-navy.vercel.app/",
   },
 ];
 
