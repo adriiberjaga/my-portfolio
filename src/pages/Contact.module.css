@@ -102,7 +102,9 @@
 .contactButton:hover {
   background-color: #7b00c2;
 }
-
+.formAlert{
+  margin-top: 10px;
+}
 @media (max-width: 940px) {
   .contactMain {
     padding: 100px 50px 0 50px;

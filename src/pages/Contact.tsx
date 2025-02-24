@@ -6,6 +6,16 @@ import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function Contact() {
+  const [formAlert, setFormAlert] = useState(false);
+
+  function finish() {
+    if (formData.name !== '' && formData.email !== '' && formData.message !== '') {
+      setFormAlert(true);
+      setTimeout(() => {
+        setFormAlert(false);
+      }, 3000);
+    }
+  }
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -108,12 +118,17 @@ function Contact() {
               onChange={onChange}
               className={stylesA["contactTextarea"]}
             ></textarea>
-            <button type="submit" className={stylesA["contactButton"]}>
+            <button onClick={finish} type="submit" className={stylesA["contactButton"]}>
               Enviar
             </button>
           </form>
         </div>
       </div>
+      {formAlert && (
+        <div className={stylesA["formAlert"]}>
+          <p>Formulario enviado correctamente</p>
+        </div>
+      )}
     </div>
   );
 }
