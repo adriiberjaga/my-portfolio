@@ -21,9 +21,9 @@ function About() {
                 Estudios
               </h4>
               <ul>
-                <li>Curso frontend 380h</li>
-                <li>Curso superior en programación de páginas web (Cursando actualmente en MASTER D)</li>
-                <li>Curso Full Stack +700h (Cursando actualmente )</li>
+                <li>- Bootcamp frontend 380h</li>
+                <li>- Curso superior en programación de páginas web (Cursando actualmente en MASTER D)</li>
+                <li>- Bootcamp Full Stack +700h (Cursando actualmente )</li>
               </ul>
             </div>
             <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
@@ -31,8 +31,8 @@ function About() {
               Experiencia
               </h4>
               <ul>
-                <li>Desarrollador Web Freelance (2024-Actual)</li>
-                <li>Proyectos personales hechos con React (2024-Actual)</li>
+                <li>- Desarrollador Web Freelance (2024-Actual)</li>
+                <li>- Proyectos personales hechos con React (2024-Actual)</li>
               </ul>
             </div>
           </div>

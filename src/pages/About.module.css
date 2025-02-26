@@ -49,7 +49,7 @@
     border-radius: 4rem;
     margin-bottom: 2rem;
     height: auto;
-    width: 200px;
+    width: 250px;
     flex-wrap: wrap;
 
 }
@@ -64,7 +64,7 @@
     margin-left: 100px;
 }
 .aboutImage img{
-    width: 400px;;
+    width: 350px;;
     border-radius: 4rem;
     box-shadow: 0 1.4rem #a300ff ;
 }
