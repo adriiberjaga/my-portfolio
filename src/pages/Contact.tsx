@@ -90,7 +90,7 @@ function Contact() {
               type="text"
               name="name"
               id="name"
-              placeholder="Name"
+              placeholder="Nombre"
               title="Name"
               value={formData.name}
               onChange={onChange}
@@ -113,12 +113,12 @@ function Contact() {
               maxLength={500}
               name="message"
               title="Message"
-              placeholder="Message"
+              placeholder="Mensaje"
               value={formData.message}
               onChange={onChange}
               className={stylesA["contactTextarea"]}
             ></textarea>
-            <button onClick={finish} type="submit" className={stylesA["contactButton"]}>
+            <button title="Send" onClick={finish} type="submit" className={stylesA["contactButton"]}>
               Enviar
             </button>
           </form>

@@ -64,7 +64,7 @@
     margin-left: 100px;
 }
 .aboutImage img{
-    max-width: 100%;
+    width: 400px;;
     border-radius: 4rem;
     box-shadow: 0 1.4rem #a300ff ;
 }
@@ -106,7 +106,7 @@
     }
     .aboutImage img{
         width: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     .about{
         display: flex;

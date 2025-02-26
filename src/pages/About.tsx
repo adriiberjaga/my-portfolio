@@ -22,14 +22,17 @@ function About() {
               </h4>
               <ul>
                 <li>Curso frontend 380h</li>
+                <li>Curso superior en programación de páginas web (Cursando actualmente en MASTER D)</li>
+                <li>Curso Full Stack +700h (Cursando actualmente )</li>
               </ul>
             </div>
             <div data-aos="flip-left" className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}>
               <h4 className={stylesA["aboutContentBoxesTitle"]}>
-                Experiencia
+              Experiencia
               </h4>
               <ul>
-                <li>Proyectos lo</li>
+                <li>Desarrollador Web Freelance (2024-Actual)</li>
+                <li>Proyectos personales hechos con React (2024-Actual)</li>
               </ul>
             </div>
           </div>

@@ -8,7 +8,7 @@ import styles from "./Skills.module.css";
 import fotoAngular from "../assets/angular-icon.png";
 import fotoCss from "../assets/css-icon.png";
 import fotoHtml from "../assets/html-icon.png";
-import fotoReact from "../assets/react-icon.png";
+import fotoReact from "../assets/react.svg";
 import fotoTs from "../assets/ts-icon.png";
 import fotoJs from "../assets/js-icon.png";
 import close from "../assets/close-icon.png";
