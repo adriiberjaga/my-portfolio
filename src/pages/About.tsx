@@ -32,7 +32,7 @@ function About() {
               </h4>
               <ul>
                 <li>- Desarrollador Web Freelance (2024-Actual)</li>
-                <li>- Proyectos personales hechos con React (2024-Actual)</li>
+                <li>- Proyectos personales para clientes hechos con React (2024-Actual)</li>
               </ul>
             </div>
           </div>
