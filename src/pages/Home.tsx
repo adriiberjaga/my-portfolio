@@ -18,7 +18,7 @@ function Home() {
         <div className={styles["container"]}>
           {/* Botón de LinkedIn */}
           <a
-            href="www.linkedin.com/in/adriàberjaga"
+            href="https://www.linkedin.com/in/adriàberjaga"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles["button"]} ${styles["btn-linkedin"]}`}
