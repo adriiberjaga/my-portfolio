@@ -5,11 +5,13 @@ import styles from "./Proyects.module.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
+import perfumeriaImage from '../assets/perfumeria-fake-image.png'
 import fotoAngular from "../assets/angular-icon.png";
 import fotoCss from "../assets/css-icon.png";
 import fotoHtml from "../assets/html-icon.png";
 import fotoReact from "../assets/react.svg";
 import fotoTs from "../assets/ts-icon.png";
+import fotoJs from "../assets/js-icon.png";
 import todolist from "../assets/todolist.png";
 import ecomerce from "../assets/ecomerce.png";
 import close from "../assets/close-icon.png";
@@ -76,6 +78,16 @@ desc: "Aplicación interactiva para gestionar tareas, que permite agregar, compl
     ],
     desc: "Sitio web para jugar 3 en ralla para 2 personas, con un diseño minimalista y una interfaz intuitiva. Incluye un contador de victorias y empates para llevar un registro de los resultados.(Página en proceso)",
     ref: "https://tic-tac-toe-ten-navy.vercel.app/",
+  },
+  {
+    image: perfumeriaImage,
+    title: "Tienda de cósmetica",
+    languages: [
+      { name: "React", icon: fotoReact },
+      { name: "JavaScript", icon: fotoJs },
+    ],
+desc: "Sitio web dinámico, moderno y visualmente atractivo que simula una página de venta de cosméticos, destacando diseño elegante, usabilidad y experiencia de usuario.",
+    ref: "https://perfumeria-fake-react.vercel.app/",
   },
 ];
 
