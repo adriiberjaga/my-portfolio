@@ -116,7 +116,7 @@ function Header() {
        {/* Menú Móvil Desplegable */}
        {isMenuOpen && (
          <div className="max-lg:block hidden">
-           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
              {renderLinks(true)}
            </div>
          </div>
