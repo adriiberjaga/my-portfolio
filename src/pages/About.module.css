@@ -26,6 +26,52 @@
   margin-bottom: 5rem;
 }
 
+.about{
+    display: flex;
+    align-items: space-between;
+    height: max-content;
+    padding-bottom: 200px;
+}
+.about-info{
+    max-width: 70%;
+    line-height: 1.6;
+}
+.about-text{
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+.aboutContentBoxes{
+    display: flex;
+    gap: 30px;
+}
+.box{
+    padding: 2rem;
+    border: 2px solid #a300ff ;
+    box-shadow: 0 1.4rem #a300ff ;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+    height: auto;
+    width: 250px;
+    
+    flex-wrap: wrap;
+
+}
+.aboutContentBoxesTitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #a300ff ;
+    text-align: center;
+}
+.aboutImage{
+    margin-left: 100px;
+}
+.aboutImage img{
+    width: 350px;;
+    border-radius: 4rem;
+    box-shadow: 0 1.4rem #a300ff ;
+}
+
 .about {
   display: flex;
   justify-content: center;
@@ -51,7 +97,7 @@
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: start;
 }
 
 .box {
@@ -95,6 +141,53 @@
   .title {
     padding-left: 2rem;
   }
+
+  
+  @media (min-width: 1024px) {
+    .title2{
+        display: none;}
+  }
+  @media (max-width: 1024px) {
+    .title{
+        display: none;
+    }
+    .title2{
+        margin-bottom: 1rem;
+    }
+    .aboutImage img{
+        width: 300px;
+        margin-bottom: 60px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+      padding-left:0 ;
+      justify-content: center;
+      font-size: 3.8rem;
+      order: 1;
+    }
+    .about-info{
+        padding: 0 1rem 0 1rem;
+        order: 2;
+        text-align: center;
+    }
+  }
+  
+  @media (max-width: 864px) {
+    .aboutContentBoxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutImage img{
+      width: 270px;
+      margin-bottom: 60px;
+  }
+  }
+  @media (max-width: 768px) {
 
   .aboutImage {
     margin-left: 2rem;
@@ -179,4 +272,5 @@
   .about-info {
     max-width: 100%;
   }
+}
 }

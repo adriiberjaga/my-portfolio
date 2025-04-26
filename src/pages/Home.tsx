@@ -18,7 +18,7 @@ function Home() {
         <div className={styles["container"]}>
           {/* Botón de LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/tu-perfil"
+            href="https://www.linkedin.com/in/adriàberjaga"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles["button"]} ${styles["btn-linkedin"]}`}
@@ -29,7 +29,8 @@ function Home() {
 
           {/* Botón de WhatsApp */}
           <a
-            href="https://wa.me/tu-numero"
+            href="https://wa.me/34685533110?text=Hola,%20quiero%20hablar%20contigo!
+"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles["button"]} ${styles["btn-was"]}`}
@@ -40,7 +41,7 @@ function Home() {
 
           {/* Botón de Correo */}
           <a
-            href="mailto:tu-email@ejemplo.com"
+            href="mailto:adriabdd@gmail.com"
             className={`${styles["button"]} ${styles["btn-mail"]}`}
             title="Correo"
           >
@@ -49,11 +50,11 @@ function Home() {
 
           {/* Botón de Currículum */}
           <a
-            href="/ruta/a/tu-cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles["button"]} ${styles["btn-cv"]}`}
-            title="Descargar CV"
+             href="/CV-AdriaBerjaga.png"
+             download="CV-AdriaBerjaga.png"
+             rel="noopener noreferrer"
+             className={`${styles["button"]} ${styles["btn-cv"]}`}
+             title="Descargar CV"
           >
             <FaFilePdf className={styles.icon} />
           </a>

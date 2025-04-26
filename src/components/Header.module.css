@@ -2,6 +2,8 @@
   z-index: 1 !important;
   position: fixed !important;
   background-color: var(--header-color) !important;
+
+  height: 100% !important;
 }
 .active {
   color: #a300ff !important;

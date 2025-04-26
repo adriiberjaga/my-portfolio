@@ -1,4 +1,4 @@
-import fotoReact from "../assets/react-icon.png";
+import fotoReact from  '../assets/react.svg';
 import fotoTs from "../assets/ts-icon.png";
 import todolist from "../assets/todolist.png";
 import ecomerce from "../assets/ecomerce.png";

@@ -1,13 +1,10 @@
 import  { useEffect, useState } from "react";
 import styles from "../css/Proyects.module.css";
-
-import { projects } from '../../projects/Projects'
+import { projects } from "../../projects/Projects";
 
 import close from "../../assets/close-icon.png";
 import "aos/dist/aos.css";
 import AOS from "aos";
-
-
 
 function Proyects() {
   const [openCard, setOpenCard] = useState<string | null>(null);
