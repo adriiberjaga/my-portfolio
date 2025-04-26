@@ -7,8 +7,7 @@
   font-size: 4rem;
   font-weight: bold;
   display: flex;
-  justify-content: start;
-  padding-left: 300px;
+  justify-content: center;
   margin-bottom: 7rem;
   background: linear-gradient(90deg, #a300ff, #ff00dd);
   -webkit-background-clip: text;

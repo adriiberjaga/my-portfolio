@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
-import Proyects from './pages/Proyects';
+import Proyects from './pages/ts/Proyects';
 import Skills from './pages/Skills';
 function App() {
 
