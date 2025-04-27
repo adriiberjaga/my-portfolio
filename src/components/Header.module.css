@@ -40,7 +40,9 @@
 .div-buttons {
   gap: 50px;
 }
-
+.div-header__height{
+  height: 100vh !important;
+}
 .buttons {
   font-weight: bold;
   color: var(--primary-text-color);
@@ -52,6 +54,8 @@
 .buttons:hover{
   color: #a300ff;
 }
+
+
 .buttons::before{
   content: '';
   position: absolute;

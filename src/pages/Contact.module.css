@@ -102,9 +102,33 @@
 .contactButton:hover {
   background-color: #7b00c2;
 }
-.formAlert{
+
+.formAlert {
   margin-top: 10px;
+  background: linear-gradient(90deg, #7b00c2, #9b00e0);
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(123, 0, 194, 0.4);
+  animation: fadeIn 0.5s ease-out;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @media (max-width: 940px) {
   .contactMain {
     padding: 100px 50px 0 50px;

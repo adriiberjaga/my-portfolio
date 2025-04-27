@@ -57,7 +57,7 @@ function Header() {
        to={item.to}
        smooth={true}
        duration={500}
-       offset={scrollOffset}
+       offset={scrollOffset + (isMobile && isMenuOpen ? -600 : 0)}
        className={`
          ${styles["buttons"]} 
          ${isMobile ? "block px-3 py-2 rounded hover:bg-gray-700" : ""}
@@ -116,7 +116,7 @@ function Header() {
        {/* Menú Móvil Desplegable */}
        {isMenuOpen && (
          <div className="max-lg:block hidden">
-           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+           <div className={`${styles["div-header__height"]}px-2 pb-3 space-y-1 sm:px-3 text-center h-screen flex flex-col gap-5 pt-2`}>
              {renderLinks(true)}
            </div>
          </div>
