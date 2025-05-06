@@ -22,14 +22,15 @@ function Header() {
      setIsHeadroomActive(width <= 1000);
      setIsDesktop(width > 1000);
      if (width <= 480) {
-       setScrollOffset(-340);
-     } else if (width <= 768) {
-       setScrollOffset(-380);
-     } else if (width <= 1024) {
-       setScrollOffset(-400);
-     } else {
-       setScrollOffset(-140);
-     }
+      setScrollOffset(70); // móvil pequeño
+    } else if (width <= 768) {
+      setScrollOffset(100); // móvil/tablet
+    } else if (width <= 1024) {
+      setScrollOffset(-100); // tablet grande
+    } else {
+      setScrollOffset(-100); // desktop
+    }
+    
    };
 
    // Verificar tamaño inicial
@@ -46,7 +47,7 @@ function Header() {
    { to: "home", label: "Inicio" },
    { to: "proyects", label: "Proyectos" },
    { to: "about", label: "Sobre mí" },
-   { to: "skills", label: "Skills" },
+   { to: "skills", label: "Skills"},
    { to: "contact", label: "Contacto" },
  ];
 
