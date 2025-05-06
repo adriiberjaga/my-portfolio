@@ -22,7 +22,7 @@ function Header() {
      setIsHeadroomActive(width <= 1000);
      setIsDesktop(width > 1000);
      if (width <= 480) {
-      setScrollOffset(-370); // móvil pequeño
+      setScrollOffset(-170); // móvil pequeño
     } else if (width <= 768) {
       setScrollOffset(-400); // móvil/tablet
     } else if (width <= 1024) {
