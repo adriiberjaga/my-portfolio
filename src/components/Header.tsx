@@ -22,11 +22,11 @@ function Header() {
      setIsHeadroomActive(width <= 1000);
      setIsDesktop(width > 1000);
      if (width <= 480) {
-      setScrollOffset(70); // móvil pequeño
+      setScrollOffset(-370); // móvil pequeño
     } else if (width <= 768) {
-      setScrollOffset(100); // móvil/tablet
+      setScrollOffset(-400); // móvil/tablet
     } else if (width <= 1024) {
-      setScrollOffset(-100); // tablet grande
+      setScrollOffset(-700); // tablet grande
     } else {
       setScrollOffset(-100); // desktop
     }
@@ -106,9 +106,9 @@ function Header() {
              className="text-white hover:text-gray-300 focus:outline-none"
            >
              {isMenuOpen ? (
-               <X className="h-6 w-6" />
+               <X className="h-10 w-10" />
              ) : (
-               <Menu className="h-6 w-6" />
+               <Menu className="h-10 w-10" />
              )}
            </button>
          </div>
