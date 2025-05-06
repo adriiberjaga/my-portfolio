@@ -7,7 +7,11 @@ function About() {
       <h2 className={stylesA["title"]}>Sobre mí</h2>
       <div className={stylesA["about"]}>
         <h2 className={stylesA["title2"]}>Sobre mí</h2>
-        <div data-aos="zoom-in" className={stylesA["aboutImage"]}>
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="-400"
+          className={stylesA["aboutImage"]}
+        >
           <img src={fotoAdri} alt="asdas" />
         </div>
         <div className={stylesA["about-info"]}>
@@ -21,6 +25,7 @@ function About() {
           <div className={stylesA["aboutContentBoxes"]}>
             <div
               data-aos="flip-left"
+              data-aos-offset="-400"
               className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}
             >
               <h4 className={stylesA["aboutContentBoxesTitle"]}>Estudios</h4>
@@ -30,6 +35,7 @@ function About() {
             </div>
             <div
               data-aos="flip-left"
+              data-aos-offset="-400"
               className={`${stylesA.box} ${stylesA.aboutInfoExperience}`}
             >
               <h4 className={stylesA["aboutContentBoxesTitle"]}>Experiencia</h4>
@@ -39,7 +45,6 @@ function About() {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
