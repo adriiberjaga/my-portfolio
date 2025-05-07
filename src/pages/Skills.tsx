@@ -28,10 +28,8 @@ function Skills() {
   const infoSkills = (skill: string) => {
     switch (skill) {
       case "HTML":
-        return "Experiencia de 2 años";
-      case "JavaScript":
         return "Experiencia de 1 año";
-      case "HTML":
+      case "JavaScript":
         return "Experiencia de 1 año";
       case "CSS":
         return "Experiencia de 1 año";
@@ -41,6 +39,8 @@ function Skills() {
         return "Experiencia de 1 año";
       case "React":
         return "Experiencia de 1 año";
+      default:
+        return "Información no disponible";
     }
   };
   //animaciones

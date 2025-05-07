@@ -5,6 +5,7 @@ import ecomerce from "../assets/ecomerce.png";
 import ecomerce2 from "../assets/hym.png"
 import acuario from '../assets/acuario.png'
 import ticTac from '../assets/tic-tac-toe.png'
+import cafeteria from '../assets/cafeteria.png'
 
  interface Project {
     image: string;
@@ -63,5 +64,15 @@ import ticTac from '../assets/tic-tac-toe.png'
       ],
       desc: "Sitio web para jugar 3 en ralla para 2 personas, con un diseño minimalista y una interfaz intuitiva. Incluye un contador de victorias y empates para llevar un registro de los resultados.(Página en proceso)",
       ref: "https://tic-tac-toe-ten-navy.vercel.app/",
+    },
+    {
+      image: cafeteria,
+      title: "Caféteria Aromas",
+      languages: [
+        { name: "React", icon: fotoReact },
+        { name: "TypeScript", icon: fotoTs },
+      ],
+      desc: "Sitio web para una cafetería artesanal con granos de origen seleccionados y tostados in situ. Diseño elegante y funcional que incluye menú interactivo, sistema de reservas y blog sobre el mundo del café. (Página en proceso)",
+      ref: "https://coffe-ecommerce.vercel.app/",
     },
   ];
