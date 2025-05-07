@@ -22,14 +22,15 @@ function Header() {
      setIsHeadroomActive(width <= 1000);
      setIsDesktop(width > 1000);
      if (width <= 480) {
-       setScrollOffset(-340);
-     } else if (width <= 768) {
-       setScrollOffset(-380);
-     } else if (width <= 1024) {
-       setScrollOffset(-400);
-     } else {
-       setScrollOffset(-140);
-     }
+      setScrollOffset(-720); // móvil pequeño
+    } else if (width <= 768) {
+      setScrollOffset(-400); // móvil/tablet
+    } else if (width <= 1024) {
+      setScrollOffset(-700); // tablet grande
+    } else {
+      setScrollOffset(-100); // desktop
+    }
+    
    };
 
    // Verificar tamaño inicial
@@ -46,7 +47,7 @@ function Header() {
    { to: "home", label: "Inicio" },
    { to: "proyects", label: "Proyectos" },
    { to: "about", label: "Sobre mí" },
-   { to: "skills", label: "Skills" },
+   { to: "skills", label: "Skills"},
    { to: "contact", label: "Contacto" },
  ];
 
@@ -105,9 +106,9 @@ function Header() {
              className="text-white hover:text-gray-300 focus:outline-none"
            >
              {isMenuOpen ? (
-               <X className="h-6 w-6" />
+               <X className="h-10 w-10" />
              ) : (
-               <Menu className="h-6 w-6" />
+               <Menu className="h-10 w-10" />
              )}
            </button>
          </div>

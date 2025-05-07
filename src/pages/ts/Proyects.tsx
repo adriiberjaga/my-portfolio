@@ -23,13 +23,6 @@ function Proyects() {
     }, 500); // Asegúrate de que el tiempo coincide con la duración de la animación
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: false,
-    });
-  }, []);
-
   return (
     <>
       <div className={styles.content}>
@@ -38,6 +31,7 @@ function Proyects() {
           {projects.map((project, index) => (
             <div
               data-aos="flip-left"
+
               key={index}
               className={styles["project-card"]}
             >

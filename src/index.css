@@ -38,6 +38,8 @@
   
 html {
     scroll-behavior: smooth;
+    zoom: 90%; 
+    /* quitar esto y offset de ap tsx */
   }
 body,
 main{

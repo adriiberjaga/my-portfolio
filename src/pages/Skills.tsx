@@ -44,12 +44,7 @@ function Skills() {
     }
   };
   //animaciones
-  useEffect(() => {
-    AOS.init({
-      duration: 2300,
-      once: false,
-    });
-  }, []);
+
   const getAnimation = (index: number) => {
     if (window.innerWidth <= 768) {
       return "fade-down";
@@ -74,7 +69,11 @@ function Skills() {
       <div className={styles.main}>
         <h3 className={styles.title}>Skills</h3>
         <div className={styles.firstCont}>
-          <div data-aos={getAnimation(0)} className={styles.iconContainer}>
+          <div
+            data-aos={getAnimation(0)}
+            data-aos-offset="-400"
+            className={styles.iconContainer}
+          >
             <img
               onClick={() => openSkill("HTML", fotoHtml)}
               className={styles.icons}
@@ -83,7 +82,11 @@ function Skills() {
             />
             <p className={styles.iconText}>HTML</p>
           </div>
-          <div data-aos={getAnimation(1)} className={styles.iconContainer}>
+          <div
+            data-aos={getAnimation(1)}
+            data-aos-offset="-400"
+            className={styles.iconContainer}
+          >
             <img
               onClick={() => openSkill("JavaScript", fotoJs)}
               className={styles.icons}
@@ -92,7 +95,11 @@ function Skills() {
             />
             <p className={styles.iconText}>JavaScript</p>
           </div>
-          <div data-aos={getAnimation(2)} className={styles.iconContainer}>
+          <div
+            data-aos={getAnimation(2)}
+            data-aos-offset="-400"
+            className={styles.iconContainer}
+          >
             <img
               onClick={() => openSkill("CSS", fotoCss)}
               className={styles.icons}
@@ -103,7 +110,11 @@ function Skills() {
           </div>
         </div>
         <div className={styles.secondCont}>
-          <div data-aos={getAnimation(0)} className={styles.iconContainer}>
+          <div
+            data-aos={getAnimation(0)}
+            data-aos-offset="-400"
+            className={styles.iconContainer}
+          >
             <img
               onClick={() => openSkill("React", fotoReact)}
               className={styles.icons}
@@ -112,7 +123,11 @@ function Skills() {
             />
             <p className={styles.iconText}>React</p>
           </div>
-          <div data-aos={getAnimation(3)} className={styles.iconContainer}>
+          <div
+            data-aos={getAnimation(3)}
+            data-aos-offset="-400"
+            className={styles.iconContainer}
+          >
             <img
               onClick={() => openSkill("TypeScript", fotoTs)}
               className={styles.icons}
@@ -121,7 +136,11 @@ function Skills() {
             />
             <p className={styles.iconText}>TypeScript</p>
           </div>
-          <div data-aos={getAnimation(2)} className={styles.iconContainer}>
+          <div
+            data-aos={getAnimation(2)}
+            data-aos-offset="-400"
+            className={styles.iconContainer}
+          >
             <img
               onClick={() => openSkill("Angular", fotoAngular)}
               className={styles.icons}

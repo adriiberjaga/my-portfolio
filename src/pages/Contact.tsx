@@ -87,6 +87,7 @@ function Contact() {
             <input
               data-aos="zoom-in"
               required
+              data-aos-offset="-400"
               type="text"
               name="name"
               id="name"
@@ -99,6 +100,8 @@ function Contact() {
             <input
               data-aos="zoom-in"
               required
+              data-aos-offset="-400"
+
               type="email"
               name="email"
               title="Email"
@@ -110,6 +113,8 @@ function Contact() {
             <textarea
               data-aos="zoom-in"
               required
+              data-aos-offset="-400"
+
               maxLength={500}
               name="message"
               title="Message"
